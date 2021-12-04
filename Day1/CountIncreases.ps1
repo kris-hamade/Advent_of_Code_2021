@@ -4,7 +4,7 @@ $depthIndex = 0
 $increasesInDepth = 0
 foreach ($item in $arrayOfDepths) {
     $depthIndex += 1
-    if ($arrayOfDepths[$depthIndex] -gt $arrayOfDepths[$depthIndex - 1]) {
+    if ([int]$arrayOfDepths[$depthIndex] -gt [int]$arrayOfDepths[$depthIndex - 1]) {
         #Write-Output $arrayOfDepths[$depthIndex] "is greater than the last"
         Write-Output $arrayOfDepths[$depthIndex] " is greater than"  $arrayOfDepths[$depthIndex-1]
         $increasesInDepth += 1

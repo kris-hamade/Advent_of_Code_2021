@@ -1,13 +1,12 @@
 var fs = require("fs");
 
 var text = fs.readFileSync("./numbers", "utf8");
-var depthValues = text.split("\n"); 
-depthValues = depthValues.map(x => parseInt(x));
+var depthValues = text.split("\n").map(x => parseInt(x));
 var depthIncreaseCount = 0;
 
-depthValues.forEach((depthValue,index) => {depthCount = (depthValues[index] > depthValues[index-1]) ? depthIncreaseCount += 1 : console.log(depthIncreaseCount);});
+depthValues.forEach((depthValue,index) => {depthCount = (depthValues[index] > depthValues[index-1]) ? depthIncreaseCount += 1 : console.log(depthIncreaseCount) ;});
 
-console.log(depthIncreaseCount);
+console.log("Final Count " + depthIncreaseCount);
 
 var newDepthArray = [];
 var higherNumberCount = 0;
