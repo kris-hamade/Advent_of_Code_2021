@@ -1,6 +1,6 @@
 var fs = require("fs");
 
-var input = fs.readFileSync("./Day2/examplecommands", "utf8");
+var input = fs.readFileSync("./Day2/inputday2", "utf8");
 var commands = input.split("\n").map(x => {
     direction = x.split(" ", 1)[0]
     distance = parseInt(x.split(" ", 2)[1])
