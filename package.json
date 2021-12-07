@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "stats-lite": "^2.2.0"
   }
 }
